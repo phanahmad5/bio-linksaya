@@ -57,10 +57,15 @@
         </li>
     </ul>
 
-    <div class="copyright">
-        <br><br><br>
-        <p>Copyright Phanahmad &copy; 2024</p>
-    </div> 
+   <div class="copyright">
+    <br><br><br>
+    <p>Copyright Phanahmad &copy; <span id="year"></span></p>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 
     <!-- Toast Notification -->
     <div id="toast"></div> 
